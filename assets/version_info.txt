@@ -1,0 +1,29 @@
+# UTF-8
+# Windows PE 版本资源：写入 exe 文件属性（右键 -> 属性 -> 详细信息）
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,            # VOS_NT_WINDOWS32
+    fileType=0x1,          # VFT_APP
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable('080404b0', [   # 简体中文 + Unicode
+        StringStruct('CompanyName', ''),
+        StringStruct('FileDescription', '桌面智能监控回答程序'),
+        StringStruct('FileVersion', '1.0.0.0'),
+        StringStruct('InternalName', 'screen_answerer'),
+        StringStruct('LegalCopyright', ''),
+        StringStruct('OriginalFilename', 'screen_answerer.exe'),
+        StringStruct('ProductName', 'ScreenAnswerer'),
+        StringStruct('ProductVersion', '1.0.0.0')
+      ])
+    ]),
+    VarFileInfo([VarStruct('Translation', [2052, 1200])])  # 简体中文 + Unicode
+  ]
+)
